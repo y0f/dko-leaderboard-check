@@ -58,8 +58,8 @@ def main():
                 if new_leaderboard_type in ['1v1', '2v2']:
                     leaderboard_type = new_leaderboard_type
                     soup = fetch_leaderboard(leaderboard_url, leaderboard_type)
-                    today_date = datetime.now().strftime("%Y-%m-%d")  # Update today_date
-                    file_name = f"user_data_{today_date}_{leaderboard_type}.txt"  # Update file_name
+                    today_date = datetime.now().strftime("%Y-%m-%d")
+                    file_name = f"user_data_{today_date}_{leaderboard_type}.txt"
                     print(f"Switched to {leaderboard_type} leaderboard.")
                 else:
                     print("Invalid leaderboard type. Switching aborted.")
